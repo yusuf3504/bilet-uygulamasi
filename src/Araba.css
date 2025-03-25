@@ -1,0 +1,134 @@
+/* Genel Stil */
+.search {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-image: url('https://www.sixt.com.tr/storage/cache/0af32b48ded7ff87171db985cec374256bd77767.webp');
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .search-box {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+  }
+  
+  .search-box-bg {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+  }
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group input[type="checkbox"] {
+    width: auto;
+  }
+  
+  .select2-container {
+    width: 100% !important;
+  }
+  
+  .icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .icons-icon724 {
+    width: 20px;
+    height: 100px;
+  }
+  
+  .icons strong {
+    font-size: 14px;
+  }
+  .yazılar {
+    color: rgb(255, 255, 255);
+  }
+  .button-araç {
+    color: rgb(0, 0, 0);
+    background-color: rgb(16, 192, 77);
+    width: 200px;
+  }
+  /* Responsive Stil */
+  @media (max-width: 1200px) {
+    .search {
+      padding: 15px;
+    }
+    .form-group {
+      width: 100%;
+    }
+    .header-resim {
+      margin: 0 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .search {
+      padding: 10px;
+    }
+    .form-row {
+      flex-direction: column;
+    }
+    .header-resim {
+      margin: 0;
+      gap: 10px;
+      justify-content: center;
+    }
+    .header-resim .icons {
+      width: 100%;
+      justify-content: center;
+    }
+    .arac {
+      margin: 0;
+    }
+    .icons-container {
+      justify-content: center;
+    }
+    .search-box,
+    .search-box-bg {
+      padding: 10px;
+      flex-direction: column;
+    }
+  }
+  
+  
+  

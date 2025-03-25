@@ -1,0 +1,211 @@
+.bilet {
+  display: flex;
+  flex-direction: column;
+  
+}
+/* footer start */
+
+.share {
+  /* padding: 20px 0; */
+  gap: 8px;
+  font-size: larger;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.share a {
+  color: black;
+}
+
+.share a:hover {
+  color: red;
+}
+
+.menu-share {
+  background-color: #d1d7dd;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.credit {
+  font-size: 20px;
+  font-weight: 300;
+  /* padding-top: 10px; */
+  margin-right: 30px;
+}
+
+.credit span {
+  color: red;
+}
+
+
+.footerMenus {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin-top: 40px;
+  padding: 20px;
+  text-align: left;
+  background-color: #d1d7dd;
+}
+
+.footerMenus>div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.footerMenus a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footerMenus a:hover {
+  color: #c40e0e;
+}
+
+.footerMenu {
+  list-style: none;
+  padding: 0;
+}
+
+.footerMenu li {
+  margin-bottom: 10px;
+}
+
+.hpadding-reset {
+  padding: 0;
+}
+
+.üstbaslık {
+  font-size: 23px;
+}
+
+
+.footer-links h3 {
+  margin: 10px 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: space-between;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #030303;
+  text-decoration: none;
+}
+
+.footer-bottom .social-media a {
+  margin: 0 5px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ticket-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.ticket {
+  font-size: 24px;
+  color: white;
+  background: #4caf50;
+  padding: 20px;
+  border-radius: 8px;
+  animation: fadeInScale 1s ease-out;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.form-group input.error {
+  border: 1px solid red;
+}
+
+.form-group span.alert-message {
+  color: red;
+  font-size: 14px;
+  /* margin-top: 5px; */
+  display: block;
+}
+
+
+@media (max-width: 769px) {
+  .bilet {
+    width: 100%;
+  }
+
+  .footerMenus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-share {
+    flex-direction: column
+  }
+
+  .box img {
+    width: 100%;
+  }
+}
